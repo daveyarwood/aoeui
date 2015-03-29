@@ -1,0 +1,10 @@
+[
+  [:editor "ctrl-h" :editor.char-left]
+  [:editor "ctrl-t" :editor.char-right]
+  [:editor "ctrl-n" :editor.word-left]
+  [:editor "ctrl-s" :editor.word-right]
+  [:editor "ctrl-g" :aoeui.line-back]
+  [:editor "ctrl-c" :aoeui.line-forward]
+  [:editor "ctrl-r" :editor.page-up]
+  [:editor "ctrl-l" :editor.page-down]
+]

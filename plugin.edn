@@ -1,0 +1,8 @@
+{
+  :name "aoeui",
+  :author "Dave Yarwood",
+  :version "0.0.1",
+  :source "https://github.com/daveyarwood/aoeui-for-light-table",
+  :desc "aoeui key bindings for Light Table",
+  :behaviors "aoeui.behaviors",
+}

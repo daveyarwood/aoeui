@@ -9,9 +9,10 @@
 
 (defn at-line-end?
   [ed]
-  false)
-
-(editor/->cursor (last-active) "start")
+  (let [line (.-line (editor/cursor ed))
+        pos  (.-ch (editor/cursor ed))
+        line-length (count (editor/line ed line))]
+    (= pos line-length)))
 
 (command {:command :aoeui.line-back
           :desc "aoeui: line up"
@@ -26,6 +27,6 @@
           :hidden true
           :exec (fn []
                   (when-let [ed (last-active)]
-                    (if (at-line-end? ed)
-                      (exec! :editor.line-down)
-                      (exec! :editor.line-right))))})
+                    (when (at-line-end? ed)
+                      (exec! :editor.line-down))
+                    (exec! :editor.line-right)))})

@@ -1,10 +1,16 @@
 [
-  [:editor "ctrl-h" :editor.char-left]
-  [:editor "ctrl-t" :editor.char-right]
-  [:editor "ctrl-n" :editor.word-left]
-  [:editor "ctrl-s" :editor.word-right]
-  [:editor "ctrl-g" :aoeui.line-back]
-  [:editor "ctrl-c" :aoeui.line-forward]
-  [:editor "ctrl-r" :editor.page-up]
-  [:editor "ctrl-l" :editor.page-down]
+ [:editor "ctrl-space"] ; disable, so we can use ^Space as a modifier
+ [:editor "ctrl-space-enter" :show-commandbar-transient]
+ [:sidebar.command "ctrl-space"] ; disable
+ [:sidebar.command "ctrl-space-enter" :close-sidebar]
+
+ ; navigation
+ [:editor "ctrl-h" :editor.char-left]
+ [:editor "ctrl-t" :editor.char-right]
+ [:editor "ctrl-n" :editor.word-left]
+ [:editor "ctrl-s" :editor.word-right]
+ [:editor "ctrl-g" :aoeui.line-back]
+ [:editor "ctrl-c" :aoeui.line-forward]
+ [:editor "ctrl-r" :editor.page-up]
+ [:editor "ctrl-l" :editor.page-down]
 ]

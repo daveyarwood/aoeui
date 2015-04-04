@@ -6,6 +6,10 @@ I'm a long-time fan of [aoeui](http://aoeui.sourceforge.net), a simple CLI text 
 
 I also really like Light Table for a variety of reasons (the [official site](http://www.lighttable.com) gives a pretty good overview of its greatness), one of which is how easy it is to customize. So, an aoeui plugin for Light Table should give me just as much Emacs as I want without having to go full-on Emacs! :P
 
+## Notes
+
+* aoeui uses `^Space` (`Ctrl+Space`) as a modifier for many commands. This key combination happens to be taken in the default Light Table keymap as the shortcut to open and close the command bar, so, in order to deliver a more authentic aoeui experience, I've remapped Light Table's "open/close command bar" keyboard shortcut from `^Space` to `^Space^Enter` (hold down `Ctrl` and `Space` and press `Enter`).
+
 ## TODO
 
 (Just listing out everything aoeui can do for now -- some of these features may or may not be appropriate/necessary for a Light Table plugin. See the [aoeui manpage](http://manpages.ubuntu.com/manpages/gutsy/man1/aoeui.1.html) for more info.)

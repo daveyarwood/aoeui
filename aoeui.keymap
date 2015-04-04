@@ -1,8 +1,9 @@
 [
- [:editor "ctrl-space"] ; disable, so we can use ^Space as a modifier
- [:editor "ctrl-space-enter" :show-commandbar-transient]
- [:sidebar.command "ctrl-space"] ; disable
- [:sidebar.command "ctrl-space-enter" :close-sidebar]
+ ; aoeui uses ^Space as a modifier for many commands,
+ ; Light Table default keymap uses it to open/close the command bar.
+ ; remapping open/close command bar to ^Space^Enter, so we can use ^Space as a modifier
+ [:app "-ctrl-space" :show-commandbar-transient]
+ [:app "ctrl-space-enter" :show-commandbar-transient]
 
  ; navigation
  [:editor "ctrl-h" :editor.char-left]
